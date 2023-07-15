@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.Mov{
+  display: flex;
+  justify-content: space-around;
+}
+.add{
+  display: flex;
+  justify-content: flex-end;
+}
+.btnmore{
+  background-color: white;
+  border: none;
+  color: green;
+}
+.btn{
+  background-color: white;
+  border: none;
+  color: red;
+}
+.navb{
+  margin-bottom:20px;
+}
