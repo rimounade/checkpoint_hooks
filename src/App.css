@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -57,3 +58,32 @@
 .navb{
   margin-bottom:20px;
 }
+
+.descmovie p,h1{
+  
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+.descmovie h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #28044866;
+}
+.descmovie p{
+  font-family:  cursive;
+  font-size: unset;
+ 
+}
+/* iframe{
+  margin-top: 50px;
+  margin-left: 30%; 
+} */
+.moviestyle{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 150px;
+  
+}
+
+

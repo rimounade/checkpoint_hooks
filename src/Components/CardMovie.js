@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap"
 import Rating from '@mui/material/Rating';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const CardMovie =({el,moovie,setMoovie})=>{
   const [showMore, setShowMore] = useState(false);
   const handleDelete=(a)=>{
@@ -9,11 +10,11 @@ const CardMovie =({el,moovie,setMoovie})=>{
     return(
         <div>
             <Card style={{ width: '18rem' }}>
-        <Card.Img style={{width :"280px" , height:"400px"}} variant="top" src={el.poster}/>
+       <Link  to={`/moovie/${el.id}`}><Card.Img  style={{width :"280px" , height:"400px"}} variant="top" src={el.poster}/></Link> 
         <Card.Body>
-          <Card.Title>{el.title}</Card.Title>
+          <Card.Title >{el.title}</Card.Title>
           <Card.Text>
-            {/* {el.desc} */}
+         
             {showMore ? el.desc : el.desc.substring(0,70)}
             <button className={showMore?"btnless" : "btnmore"} onClick={()=>setShowMore(!showMore)}>show more</button>
             </Card.Text>
